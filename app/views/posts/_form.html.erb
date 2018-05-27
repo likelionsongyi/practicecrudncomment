@@ -1,0 +1,9 @@
+<%= form_for(@post) do |f| %>
+<div class="title">
+    제목:<%= f.text_field :title%>
+</div><br>
+<span class="content">
+    내용:<%= f.text_area :content%>
+</span>
+<%= f.submit "제출"%>
+<%end%>
